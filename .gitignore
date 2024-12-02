@@ -1,0 +1,5 @@
+.dvt/
+*.log
+.vscode/
+ModelSim/
+Quartus/
