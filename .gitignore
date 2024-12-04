@@ -3,3 +3,6 @@
 .vscode/
 ModelSim/
 Quartus/
+.settings/
+.project
+.library_mapping.xml

@@ -9,7 +9,7 @@ module regfile(data_in, writenum, write, readnum1, readnum2, clk, data_out1, dat
     output [WIDTH-1:0] data_out1, data_out2;
 
     wire [SIZE-1:0] write_sel;
-    binaryToOnehot #(.SIZE(SIZE)) bto (.in(writenum), .out(write_sel));
+    binary_to_onehot #(.SIZE(SIZE)) bto (.in(writenum), .out(write_sel));
 
     wire [WIDTH-1:0] reg_out [0:SIZE-1];
     // instantiate DFFE modules

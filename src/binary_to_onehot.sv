@@ -1,4 +1,4 @@
-module binaryToOnehot(in, out);
+module binary_to_onehot(in, out);
     parameter SIZE = 8;
     localparam ADDR_WIDTH = $clog2(SIZE);
 
