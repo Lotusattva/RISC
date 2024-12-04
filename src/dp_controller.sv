@@ -17,7 +17,7 @@ module dp_controller(state,write,loada,loadb,loadc,loads,vsel);
 
     input [3:0] state;
     output write, loada, loadb, loadc, loads;
-    output [SEL_WIDTH-1:0] vsel;
+    output tri [SEL_WIDTH-1:0] vsel;
 
     assign write = (state == `S_WRITE_IMM || state == `S_WRITE_C);
     assign loada = (state == `S_LOAD_AB);
